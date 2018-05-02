@@ -85,7 +85,7 @@ class Dog
     sql = <<-SQL
       SELECT *
       FROM dogs
-      WHERE name = ?, breed = ?, id = ?
+      WHERE id = ?
       LIMIT 1
     SQL
 
