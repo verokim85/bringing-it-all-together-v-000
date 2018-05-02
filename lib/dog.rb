@@ -84,16 +84,16 @@ class Dog
   def self.find_or_create_by(name:, breed:, id:)
     sql = <<-SQL
       SELECT *
-      FROM dogs 
-      WHERE name = ?, breed = ?, id = ? 
-      LIMIT 1 
+      FROM dogs
+      WHERE name = ?, breed = ?, id = ?
+      LIMIT 1
     SQL
 
-  DB[:conn].execute(sql,name, breed, id).map do |row|
+  DB[:conn].execute(sql, name, breed, id).map do |row|
       self.new_from_db(row)
     end.first
 
-    
+
   end
 
 
