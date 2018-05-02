@@ -81,10 +81,10 @@ class Dog
     end.first
   end
 
-  def self.find_or_create_by
-    sql = <<-SQL 
-      
-    SQL 
+  def self.find_or_create_by(name:, breed:, id:)
+    sql = <<-SQL
+
+    SQL
   end
 
 
