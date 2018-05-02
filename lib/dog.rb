@@ -32,7 +32,7 @@ class Dog
     id = row[0]
     name = row[1]
     breed = row[2]
-    new_dog(name, breed, id)
+    new_dog.new(name, breed, id)
   end
 
 
