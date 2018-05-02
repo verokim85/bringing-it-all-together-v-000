@@ -57,5 +57,13 @@ class Dog
     self
   end
 
+  def self.find_by_id
+    sql =<<-SQL
+      "SELECT * FROM dogs WHERE id = ?"
+      result = DC[:conn].execute(sql, id)[0]
+      Song.new(result[0], result[1], result[2])
+    SQL
+  end
+
 
 end
