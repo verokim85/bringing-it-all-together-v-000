@@ -40,6 +40,8 @@ class Dog
     dog = Dog.new(name, breed)
     dog.save
     dog
+
+      DB[:conn].execute(sql)
   end
 
   def save
