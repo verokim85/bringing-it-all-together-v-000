@@ -70,7 +70,7 @@ class Dog
       end.first
     end
 
-def     
+    def
 
 
 end
