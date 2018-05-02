@@ -32,6 +32,8 @@ class Dog
     @name = row[1]
     @breed = row[2]
     self.new(name, breed, id)
+
+    DB[:conn].execute(sql)
   end
 
   def self.create(name:, breed:)
