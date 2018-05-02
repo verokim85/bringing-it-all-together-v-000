@@ -13,6 +13,7 @@ class Dog
         id INTEGER PRIMARY KEY,
         name TEXT,
         breed TEXT
+        LIMIT 1
       )
     SQL
 
@@ -57,4 +58,4 @@ class Dog
   end
 
 
-end 
+end
