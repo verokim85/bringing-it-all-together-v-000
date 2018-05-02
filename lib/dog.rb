@@ -41,7 +41,6 @@ class Dog
     dog.save
     dog
 
-      DB[:conn].execute(sql)
   end
 
   def save
